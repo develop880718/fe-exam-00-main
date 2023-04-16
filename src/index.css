@@ -41,18 +41,29 @@ h2 {
 
 h4 {
   font-size: 35px;
-  margin-left: 560px;
+}
+
+.contenedor-tarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contenido-tarea {
   width: 50%;
-  background-color: rgb(125, 119, 119);
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  justify-items: center;
   margin-left: 300px;
   padding: 10px;
   border-radius: 10px;
 }
+
+.contenido-tarea > span button {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

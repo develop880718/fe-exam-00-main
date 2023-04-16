@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Formulario from "./components/Formulario";
-import { Tarea } from "./components/Tarea";
+import { Tasks } from "./components/Tasks";
 
 function App() {
   const [tarea, setTarea] = useState(" ");
@@ -60,7 +60,7 @@ function App() {
         <h4>Task</h4>
         <div className="contenido-tarea">
           {listadoTask.map((tarea) => (
-            <Tarea
+            <Tasks
               key={tarea.id}
               id={tarea.id}
               tarea={tarea}

@@ -11,14 +11,19 @@
   width: 55px;
   margin-left: 25px;
   border-radius: 10px;
-}
-
-.in-left:hover {
+  background-color: rgb(24, 7, 209);
   border-color: rgb(24, 7, 209);
+  color: white;
 }
 
 .in-right:hover {
   cursor: pointer;
-  background-color: rgb(24, 7, 209);
-  color: white;
+  background-color: aliceblue;
+  color: rgb(24, 7, 209);
+  transition: all 2s;
+  transform: rotateX(360deg);
+}
+
+.in-left:hover {
+  transition: all 0.5s;
 }

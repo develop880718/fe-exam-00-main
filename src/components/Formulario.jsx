@@ -1,4 +1,4 @@
-import Formulariocss from "./Formulariocss.css";
+import "./formulario.css";
 
 function Formulario(props) {
   const { tarea, handleChange, handleSubmit } = props;
