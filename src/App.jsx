@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Formulario from "./components/Formulario";
-import { Tasks } from "./components/Tasks";
+import  {Tasks}  from "./components/tareas/Tasks";
 
 function App() {
   const [tarea, setTarea] = useState(" ");
@@ -56,20 +56,7 @@ function App() {
           handleSubmit={handleSubmit}
         />
       </div>
-      <div className="contenedor-tarea">
-        <h4>Task</h4>
-        <div className="contenido-tarea">
-          {listadoTask.map((tarea) => (
-            <Tasks
-              key={tarea.id}
-              id={tarea.id}
-              tarea={tarea}
-              onActualizar={onActualizar}
-              borrarTarea={borrarTarea}
-            />
-          ))}
-        </div>
-      </div>
+     <Tasks   tareas={listadoTask} onActualizar={onActualizar} borrarTarea={borrarTarea}  />
     </div>
   );
 }

@@ -49,15 +49,21 @@ h4 {
   align-items: center;
   flex-direction: column;
 }
-
+/* Si esto es el contenedor de tarea porque el css esta aca debe ir lo mas prxomi a donde se esta creando */
 .contenido-tarea {
+  /* display: flex; debes anadir flex */
+  display: flex;
+  flex-direction: column;
   width: 50%;
   justify-content: space-between;
   justify-items: center;
-  margin-left: 300px;
+  /* margin-left: 300px; esto ahce que se te tire a la derecha 300px como esta en un contenedor flex y lo quieres
+  centrado no lo necesitas */
   padding: 10px;
   border-radius: 10px;
 }
+
+
 
 .contenido-tarea > span button {
   padding-left: 10px;
