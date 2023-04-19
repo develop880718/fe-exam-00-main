@@ -7,7 +7,7 @@ export function DataTime(props) {
   useEffect(() => {
     const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const interval = setInterval(() => setDate(new Date()), 1000);
-    return () => clearInterval(timer);
+    return () => clearInterval(timezone);
   }, []);
 
   return (
